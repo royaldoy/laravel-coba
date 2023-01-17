@@ -1,0 +1,18 @@
+@extends('layout/main')
+
+@section('container')
+
+<h2> Post Category : {{ $category }}</h2>
+
+
+@foreach($post as $k)
+<h1>{{ $k->title }}</h1>
+<p>{{ $k->body }}</p>
+<a href="/buku/{{ $k->id }}">Baca Disini</a>
+<br>
+@endforeach
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+@endsection

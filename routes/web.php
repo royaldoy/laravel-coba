@@ -75,6 +75,9 @@ Route::get('/dashboard', function () {
     return view('dashboard.index');
 })->middleware('auth');
 
+// Route::get('/dashboard', function () {
+//     return view('dashboard.index');
+// })->middleware('auth');
 
 // Route::get('/categories', function () {
 //     return view('categories', [
